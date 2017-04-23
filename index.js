@@ -1,14 +1,14 @@
 "use strict";
 
 var Promise = require("bluebird");
-var AlexaUtterances = require("alexa-utterances");
+var utterances = require("alexa-utterances");
 var SSML = require("./lib/to-ssml");
 var vui = {};
 var defaults = require("lodash.defaults");
 var verifier = require("alexa-verifier-middleware");
 var bodyParser = require('body-parser');
 var normalizeApiPath = require('./lib/normalize-api-path');
-const os = require('os');
+var os = require('os');
 
 function findKey(object, key) {
   return Object.keys(object).find(k => k.toLowerCase() === key.toLowerCase());
@@ -521,7 +521,7 @@ vui.app = function (name) {
       intent = self.intents[intentName];
       if (intent.schema && intent.schema.utterances) {
         intent.schema.utterances.forEach(function (sample) {
-          var list = AlexaUtterances(sample,
+          var list = utterances(sample,
             intent.schema.slots,
             self.dictionary,
             self.exhaustiveUtterances);

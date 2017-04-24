@@ -1,5 +1,7 @@
 ## Synopsis
 
+VUI - Voice User Interface
+
 If you've built Amazon Alexa skills using NodeJS then you've like come across a handly set of tools for locally developing Alexa Skills that can be deployed to the cloud ([Alexa App](https://github.com/alexa-js/alexa-app) and [Alexa App Server](https://github.com/alexa-js/alexa-app-server)). These tools are great and make building, testing, and deploying Alexa skills simple.
 
 

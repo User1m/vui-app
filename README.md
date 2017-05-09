@@ -13,6 +13,7 @@ With Cortana Skills coming out I was hoping to just be able to re-use these tool
 ## Installation
 
 `npm install git://github.com/user1m/vui-app.git`
+
 `npm i`
 
 

@@ -12,7 +12,8 @@ With Cortana Skills coming out I was hoping to just be able to re-use these tool
 
 ## Installation
 
-Simply clone or download [this repo](https://github.com/user1m/vui-app) into the ***node_modules*** folder in-place of [alexa-app](https://github.com/alexa-js/alexa-app).
+`npm install git://github.com/user1m/vui-app.git`
+`npm i`
 
 
 ## Acknowledgements
